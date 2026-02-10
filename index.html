@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Surprise ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg, #ff4e50, #fc913a);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .heart {
+      position: fixed;
+      color: red;
+      font-size: 20px;
+      animation: fall 5s linear infinite;
+    }
+
+    @keyframes fall {
+      from { transform: translateY(-10%); }
+      to { transform: translateY(110%); }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>❤️ I Proposed to You ❤️</h1>
+    <h2>Will You Be Mine Forever?</h2>
+    <p>– Your Name</p>
+  </div>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      document.body.appendChild(heart);
+
+      setTimeout(() => heart.remove(), 5000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
