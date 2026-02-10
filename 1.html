@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Button Event Listeners</title>
+</head>
+<body>
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    <button id="btn3">Button 3</button>
+
+    <script>
+        document.getElementById('btn1').addEventListener('click', function() {
+            console.log('Button 1 clicked');
+        });
+        document.getElementById('btn2').addEventListener('dblclick', function() {
+            console.log('Button 2  double clicked');
+        });
+
+        document.getElementById('btn3').addEventListener('mouseover', function() {
+            console.log('Button 3 mouse over');
+        });
+    </script>
+</body>
+</html>
