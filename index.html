@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Surprise ❤️</title>
+  <title>For My Basa ❤️</title>
   <style>
     body {
       margin: 0;
@@ -14,15 +14,21 @@
       color: white;
       text-align: center;
       overflow: hidden;
+      flex-direction: column;
     }
 
-    h1 {
-      font-size: 40px;
+    h1 { font-size: 38px; margin: 10px; }
+    h2 { margin: 10px; }
+
+    img {
+      width: 220px;
+      border-radius: 15px;
+      margin-top: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
 
     .heart {
       position: fixed;
-      color: red;
       font-size: 20px;
       animation: fall 5s linear infinite;
     }
@@ -35,11 +41,13 @@
 </head>
 
 <body>
-  <div>
-    <h1>❤️ I Proposed to You ❤️</h1>
-    <h2>Will You Be Mine Forever?</h2>
-    <p>– Your Name</p>
-  </div>
+
+  <h1>❤️ Basa ❤️</h1>
+  <h2>Will you be my Valentine? 😊❤️</h2>
+  <p>Love you Basa ❤️❤️</p>
+  <p>– Mahi</p>
+
+  <img src="basa.jpg">
 
   <script>
     function createHeart() {
@@ -53,5 +61,6 @@
     }
     setInterval(createHeart, 300);
   </script>
+
 </body>
 </html>
